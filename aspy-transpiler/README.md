@@ -1,4 +1,4 @@
-# 🐍 ASPY Transpiler — Assamese → Python
+#  ASPY Transpiler — Assamese → Python
 
 ASPY Transpiler is an experimental project that allows you to **write Python programs in Assamese language syntax**.  
 It translates `.aspy` files (Assamese-style Python) into standard Python, executes them safely,  
@@ -6,7 +6,7 @@ and can be used from both **Command Line** and **Visual Studio Code**.
 
 ---
 
-## 🚀 Features
+##  Functionalities
 
 ✅ Assamese → Python transpilation  
 ✅ CLI execution (`aspy_cli`)  
@@ -17,7 +17,7 @@ and can be used from both **Command Line** and **Visual Studio Code**.
 
 ---
 
-## 🧩 Folder Structure
+##  Folder Structure
 
 aspy-transpiler/
 ├── backend/
@@ -53,7 +53,7 @@ Copy code
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ### 1. Clone the Repository
 
@@ -85,17 +85,17 @@ Expected Output:
 
 python
 Copy code
-🧩 Transpiled Python Code:
+ Transpiled Python Code:
  for i in range(0, 5):
      print(i)
 
-⚙️ Execution Output:
+ Execution Output:
 0
 1
 2
 3
 4
-🧠 How It Works
+ How It Works
 The Transpiler (backend/transpiler.py) reads mapping.json
 and replaces Assamese keywords with Python equivalents.
 
@@ -107,7 +107,7 @@ The terminal (CLI mode), or
 
 The VS Code panel (extension mode).
 
-🧭 VS Code Extension
+ VS Code Extension
 Open the vscode-extension/ folder in VS Code.
 
 Run npm install to install dependencies.
@@ -125,7 +125,7 @@ Copy code
 Use Command Palette → Run Assamese Code
 to see output in the bottom panel.
 
-🔣 mapping.json Example
+ mapping.json Example
 json
 Copy code
 {
@@ -138,7 +138,7 @@ Copy code
   "ফলাফল": "return",
   "কাৰ্য্য": "def"
 }
-🧪 Running Tests
+ Running Tests
 bash
 Copy code
 pytest backend/tests/test_transpiler.py

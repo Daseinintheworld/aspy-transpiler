@@ -1,4 +1,7 @@
-import sys, io, contextlib, signal
+import sys
+import io
+import contextlib
+import signal
 
 class TimeoutException(Exception):
     pass
@@ -9,7 +12,24 @@ def timeout_handler(signum, frame):
 def execute_safely(code: str, timeout=3):
     output = io.StringIO()
     sys_stdout = sys.stdout
-    restricted_globals = {"__builtins__": {"print": print, "range": range, "input": input}}
+
+    # ✅ Safe subset of built-ins
+    safe_builtins = {
+        "print": print,
+        "range": range,
+        "input": input,
+        "int": int,
+        "float": float,
+        "str": str,
+        "len": len,
+        "enumerate": enumerate,
+        "list": list,
+        "tuple": tuple,
+        "dict": dict,
+        "set": set,
+    }
+
+    restricted_globals = {"__builtins__": safe_builtins}
 
     signal.signal(signal.SIGALRM, timeout_handler)
     signal.alarm(timeout)

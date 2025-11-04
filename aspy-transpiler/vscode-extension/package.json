@@ -1,0 +1,17 @@
+{
+    "name": "aspy-transpiler",
+    "displayName": "Assamese Python Transpiler",
+    "version": "0.0.1",
+    "engines": { "vscode": "^1.80.0" },
+    "activationEvents": ["onCommand:aspy.run", "onCommand:aspy.showPython"],
+    "contributes": {
+      "commands": [
+        { "command": "aspy.run", "title": "Run Assamese Code" },
+        { "command": "aspy.showPython", "title": "Show Transpiled Python" }
+      ],
+      "languages": [{ "id": "aspy", "extensions": [".aspy"], "aliases": ["Assamese Python"] }],
+      "grammars": [{ "language": "aspy", "scopeName": "source.aspy", "path": "./syntaxes/aspy.tmLanguage.json" }]
+    },
+    "main": "./src/extension.js"
+  }
+  

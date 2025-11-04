@@ -1,0 +1,10 @@
+{
+    "scopeName": "source.aspy",
+    "patterns": [
+      { "match": "\\b(চক্ৰ|কৰ্ম|যদি|নতুবা|যেতিয়া)\\b", "name": "keyword.control.aspy" },
+      { "match": "\\b(প্ৰিন্ট|প্ৰৱেশ|সীমা)\\b", "name": "support.function.aspy" },
+      { "match": "\".*?\"", "name": "string.quoted.double.aspy" },
+      { "match": "#.*$", "name": "comment.line.number-sign.aspy" }
+    ]
+  }
+  

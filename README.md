@@ -57,7 +57,6 @@ Copy code
 
 ### 1. Clone the Repository
 
-```bash
 git clone https://github.com/yourusername/aspy-transpiler.git
 cd aspy-transpiler
 2. Create and Activate a Virtual Environment
@@ -142,3 +141,9 @@ Copy code
 bash
 Copy code
 pytest backend/tests/test_transpiler.py
+---
+📜 **License**
+Licensed under the **Huma Abia Kanta Source-Available License (HaK-SAL)**.  
+You may view, use, and modify this code for educational and research purposes only.  
+Redistribution or commercial use is not permitted. See [LICENSE](./LICENSE) for details.
+
